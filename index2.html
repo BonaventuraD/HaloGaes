@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +9,47 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Destination Page</title>
     <style>
-         html {
+        html {
             scroll-behavior: smooth;
         }
 
         body {
             overflow-x: hidden;
-            
-           
+
+
         }
 
         #spasi {
             padding-right: 20px;
         }
 
-        #navbar{
+        #gelap {
             background-color: rgb(40, 19, 117);
         }
-        #begron{
+
+        #begron {
             background-image: url("images/compas.jpg");
             background-repeat: no-repeat;
             background-size: 100%;
         }
-        #box1{
+
+        #box1 {
             background-image: url("images/image.png");
             background-repeat: no-repeat;
             background-size: 100%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
-        #box2{background-color: turquoise;
+
+        #box2 {
+            background-color: #600026;
+        }
+        #prior li{
+            color: white; 
+            font-size: large;
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container">
@@ -48,15 +59,15 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 
-                <ul class="navbar-nav" >
+                <ul class="navbar-nav">
 
-                    <li class="nav-item"id="spasi">
+                    <li class="nav-item" id="spasi">
                         <a class="nav-link" href="index2.html">Destination</a>
                     </li>
-                    <li class="nav-item"id="spasi">
+                    <li class="nav-item" id="spasi">
                         <a class="nav-link" href="index3.html">Curator</a>
                     </li>
-                    <li class="nav-item"id="spasi">
+                    <li class="nav-item" id="spasi">
                         <a class="nav-link" href="index4.html">Account</a>
                     </li>
 
@@ -65,18 +76,46 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid" id="navbar">
-        <div class="row">
-            <div class="col-sm-12">
-                <BR><BR><BR><BR><BR>
-            <h1 style="color: white; text-align: center;">NAVBAR</h1>
-            <BR><BR><BR>
-            </div>
-        </div>
+    <div class="container-fluid" id="gelap">
+
         <div class="row" id="begron">
-            <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
-            <div class="col-sm-12">
-            
+            <div class="container">
+                <BR><BR>
+                <BR><BR><BR><BR>
+                <div class="row">
+
+                    <h1 style="color: white; text-align: center;">
+                        CHOOSE YOUR DESTINATION
+                    </h1>
+
+                </div>
+                <br>
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                            <div class="text-center">
+                                <label for="validationCustom04" class="form-label"></label>
+                                <select class="form-select" id="validationCustom04" required>
+                                  <option selected disabled value="">Choose...</option>
+                                  <option>Italy</option>
+                                <option>Japan</option>
+                                <option>New Zealand</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                  Please select a valid state.
+                                </div>
+                            
+                        </br>
+                            <button class="btn btn-primary btn-block" type="submit">Submit</button>
+                        </div>
+                        </div>
+
+                        <div class="col-sm-3"></div>
+                    </div>
+
+                </form>
+                <BR><BR><BR><BR><BR><BR><BR>
             </div>
         </div>
         <div class="row">
@@ -84,9 +123,28 @@
                 <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
             </div>
             <div class="col-sm-8" id="box2">
-                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                <div class="container" >
+                    <br>
+                    <br>
+                    <h1 style="color: white; text-align: center;">Top priority list for travel</h1>
+                    <br>
+                    <br>
+                    <ol id="prior">
+                        <li>Cras justo odio</li>
+                        <li>Cras justo odio</li>
+                        <li>Cras justo odio</li>
+                        <li>Cras justo odio</li>
+                        <li>Cras justo odio</li>
+                        <li>Cras justo odio</li>
+                        <li>Cras justo odio</li>
+                        <li>Cras justo odio</li>
+                        <li>Cras justo odio</li>
+                      </ol>
+                </div>
+                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
             </div>
         </div>
     </div>
 </body>
+
 </html>
