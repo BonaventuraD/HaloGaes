@@ -7,20 +7,20 @@
 	<meta name="viewport" content=
 		"width=device-width, initial-scale=1.0">
 	<title>
-		Build a Survey Form using HTML and CSS
+		Preferences Survey Form
 	</title>
 
 	<style>
 
-		/* Styling the Body element i.e. Color,
-		Font, Alignment */
+		
+	
 		body {
 			background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(175, 255, 231));
 			font-family: Verdana;
 			text-align: center;
 		}
 
-		/* Styling the Form (Color, Padding, Shadow) */
+		
 		form {
 			background-color: #fff;
 			max-width: 500px;
@@ -30,20 +30,16 @@
             border-radius: 2%;
 		}
 
-		/* Styling form-control Class */
 		.form-control {
 			text-align: left;
 			margin-bottom: 25px;
 		}
 
-		/* Styling form-control Label */
 		.form-control label {
 			display: block;
 			margin-bottom: 10px;
 		}
 
-		/* Styling form-control input,
-		select, textarea */
 		.form-control input,
 		.form-control select,
 		.form-control textarea {
@@ -56,8 +52,7 @@
             margin-bottom: 6px;
 		}
 
-		/* Styling form-control Radio
-		button and Checkbox */
+		
 		.form-control input[type="radio"],
 		.form-control input[type="checkbox"] {
 			display: inline-block;
@@ -66,7 +61,6 @@
 
     
 
-		/* Styling Button */
 		button {
 			background-color: #a1e2df;
 			border: 1px solid #777;
@@ -101,15 +95,13 @@
 <body>
 	<h1>Preferences Form</h1>
 
-	<!-- Create Form -->
 	<form id="form">
 
-		<!-- Details -->
 		<div class="form-control">
 			<label>1. What is the most important thing you look for when travelling?
 				<small>(Check all that apply)</small>
 
-			<!-- Input Type Text -->
+			
 			<label for="inp-1">
 				<input type="checkbox"
 					name="inp">Scenery</input>
@@ -129,7 +121,6 @@
 				2. What kind of traveller are you?
 			</label>
 
-			<!-- Input Type Email-->
 			<label for="recommed-1">
 				<input type="radio"
 					id="recommed-1"
@@ -151,7 +142,6 @@
 			</label>
             
 
-			<!-- Input Type Text -->
 		    <label for="inp-1">
                 <input type="checkbox"
                     name="inp">Fine Dining</input>
@@ -170,8 +160,7 @@
 			<label>
 				4. Are you a vegan?
 			</label>
-
-			<!-- Input Type Radio Button -->
+			
 			<label for="recommed-1">
 				<input type="radio"
 					id="recommed-1"
@@ -188,7 +177,7 @@
 			<label>5. What is your destination of interest?
 				<small>(Check all that apply)</small>
 			</label>
-			<!-- Input Type Checkbox -->
+		
 			<label for="inp-1">
 				<input type="checkbox"
 					name="inp">Landmark</input></label>
@@ -203,11 +192,11 @@
 					name="inp">Amusement Parks</input></label>
 		</div>
         
-        <div class="form-control">
+        	<div class="form-control">
 			<label>6. Preffered accomodation
 				<small>(Check all that apply)</small>
 			</label>
-			<!-- Input Type Checkbox -->
+		
 			<label for="inp-1">
 				<input type="checkbox"
 					name="inp">Backpacker</input></label>
@@ -222,12 +211,10 @@
 					name="inp">Hotel</input></label>
 
         
-
-		<!-- Multi-line Text Input Control -->
-        <div class="submit-button">
-            <button type="submit" value="submit">
+        	<div class="submit-button">
+            	<button type="submit" value="submit">
                 Submit
-            </button>
+            	</button>
         </div>
 		
 	</form>
